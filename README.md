@@ -1,3 +1,5 @@
+![Un-mediumify](un-mediumify_96.png)
+
 # Un-mediumify
 Medium is just a blog platform. A blog post is a web page with text and
 images, sometimes embedded videos. It doesn't and shouldn't need javascript.
