@@ -1,5 +1,5 @@
 all: manifest.json background.js medium_fixer.js un-mediumify_48.png un-mediumify_96.png
-	apack un-mediumify.zip *.js $^
+	apack un-mediumify.zip $^
 
 manifest.json: manifest.yaml
 	remarshal -if yaml -of json --indent-json $< > $@
