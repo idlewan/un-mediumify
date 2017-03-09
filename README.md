@@ -19,3 +19,10 @@ This WebExtension turns javascript off on medium-platform sites while still
 repairing image links so that it can be read as any other blog (because,
 for whatever nonsense reason, images aren't loaded and don't appear if you
 don't enable javascript on Medium. Fuck you, Medium, seriously).
+
+# Usage
+On medium sites that aren't under the medium.com domain, click on the
+un-mediumify button in the URL bar to repair the image links.
+
+On medium.com posts, the image links should be automatically repaired without
+a need for user action.
