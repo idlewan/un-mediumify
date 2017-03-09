@@ -1,0 +1,32 @@
+manifest_version: 2
+name: Un-mediumify
+author: Erwan Ameil
+homepage_url: https://github.com/idlewan/un-mediumify
+version: '1.0'
+
+description: >
+  Turn javascript off on medium-platform sites while repairing the site so
+  that images work
+icons:
+  '48': un-mediumify_48.png
+  '96': un-mediumify_96.png
+
+permissions:
+- webRequest
+- webRequestBlocking
+- activeTab
+
+background:
+  scripts:
+  - background.js
+
+page_action:
+  browser_style: true
+  default_icon: un-mediumify_48.png
+  default_title: Medium fixer
+
+content_scripts:
+  matches:
+  - '*://*.medium.com/*'
+  js:
+  - medium_fixer.js

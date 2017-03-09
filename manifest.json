@@ -1,0 +1,35 @@
+{
+  "author": "Erwan Ameil",
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "content_scripts": {
+    "js": [
+      "medium_fixer.js"
+    ],
+    "matches": [
+      "*://*.medium.com/*"
+    ]
+  },
+  "description": "Turn javascript off on medium-platform sites while repairing the site so that images work\n",
+  "homepage_url": "https://github.com/idlewan/un-mediumify",
+  "icons": {
+    "48": "un-mediumify_48.png",
+    "96": "un-mediumify_96.png"
+  },
+  "manifest_version": 2,
+  "name": "Un-medium-ify",
+  "page_action": {
+    "browser_style": true,
+    "default_icon": "un-mediumify_48.png",
+    "default_title": "Medium fixer"
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "activeTab"
+  ],
+  "version": "1.0"
+}
