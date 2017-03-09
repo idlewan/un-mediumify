@@ -5,7 +5,7 @@ function mediumDetector(response) {
     var headers = response.responseHeaders;
     var len = headers.length
     for (var i = 0; i < len; i++) {
-        if (headers[i].name == "X-Powered-By" && headers[i].value == "Medium") {
+        if (headers[i].name == "x-powered-by" && headers[i].value == "Medium") {
             is_medium = true;
         }
         if (headers[i].name == "Content-Security-Policy") {

@@ -26,7 +26,7 @@ page_action:
   default_title: Medium fixer
 
 content_scripts:
-  matches:
-  - '*://*.medium.com/*'
-  js:
-  - medium_fixer.js
+  - matches:
+    - '*://*.medium.com/*'
+    js:
+    - medium_fixer.js

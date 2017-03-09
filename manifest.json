@@ -5,14 +5,16 @@
       "background.js"
     ]
   },
-  "content_scripts": {
-    "js": [
-      "medium_fixer.js"
-    ],
-    "matches": [
-      "*://*.medium.com/*"
-    ]
-  },
+  "content_scripts": [
+    {
+      "js": [
+        "medium_fixer.js"
+      ],
+      "matches": [
+        "*://*.medium.com/*"
+      ]
+    }
+  ],
   "description": "Turn javascript off on medium-platform sites while repairing the site so that images work\n",
   "homepage_url": "https://github.com/idlewan/un-mediumify",
   "icons": {
@@ -20,7 +22,7 @@
     "96": "un-mediumify_96.png"
   },
   "manifest_version": 2,
-  "name": "Un-medium-ify",
+  "name": "Un-mediumify",
   "page_action": {
     "browser_style": true,
     "default_icon": "un-mediumify_48.png",
