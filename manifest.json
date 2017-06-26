@@ -29,6 +29,7 @@
     "default_title": "Medium fixer"
   },
   "permissions": [
+    "<all_urls>",
     "webRequest",
     "webRequestBlocking",
     "activeTab"

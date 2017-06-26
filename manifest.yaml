@@ -43,6 +43,7 @@ icons:
   '96': un-mediumify_96.png
 
 permissions:
+- '<all_urls>'
 - webRequest
 - webRequestBlocking
 - activeTab
